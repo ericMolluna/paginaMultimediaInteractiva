@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Ops 6 - Operación Secreta</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>Black Ops 6</h1>
+    <p>Operación Secreta: La guerra comienza</p>
+  </header>
+
+  <main>
+    <section class="video">
+      <h2>Video</h2>
+      <video controls id="trailer" width="100%" preload="metadata" muted>
+        <source src="videoBo6.mp4" type="video/mp4">
+        <track src="subtitulos/bo6_ESP.vtt" kind="subtitles" srclang="es" label="Español" default>
+        <track src="subtitulos/bo6_ENG.vtt" kind="subtitles" srclang="en" label="English">
+        Tu navegador no soporta el video HTML5.
+      </video>
+      <div class="video-controls">
+        <button id="play-pause">⏯️</button>
+        <button id="restart">⏮️ Reiniciar</button>
+        <button id="end-video">⏭️ Final</button>
+      </div>
+    </section>
+    
+    
+    <!-- Sección de audio con playlist -->
+    <section id="audio">
+        <h2>Reproductor de Música</h2>
+        <div class="audio-player">
+          <audio id="audio-element" controls>
+            <source src="audio/cancion1.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+          </audio>
+          <ul id="playlist">
+            <li data-src="./audio/cancion1.mp3" class="active">Main Theme</li>
+            <li data-src="./audio/cancion3.mp3">Sound Track</li>
+          </ul>
+        </div>
+    </section>
+
+    <h2>GALERIA</h2>
+    
+    <button id="zoom-in">Agrandar Imágenes</button>
+    <button id="zoom-out">Reducir Imágenes</button>
+    
+    <section class="galeria">
+      <img src="galeria/personaje1.png" alt="Personaje 1" class="personaje">
+      <img src="galeria/personaje2.png" alt="Personaje 2" class="personaje">
+      <img src="galeria/personaje3.png" alt="Personaje 3" class="personaje">
+      <img src="galeria/personaje4.png" alt="Personaje 4" class="personaje">
+      <img src="galeria/personaje5.png" alt="Personaje 5" class="personaje">
+      <img src="galeria/personaje6.png" alt="Personaje 6" class="personaje"> <!-- Mueve esta imagen al primer lugar -->
+
+    </section>
+    
+    
+   
+  </main>
+
+  <footer>
+    <p>Desarrollado por Eric Molluna Guerrero - Proyecto Black Ops 6</p>
+  </footer>
+
+  <script src="script.js"></script>
